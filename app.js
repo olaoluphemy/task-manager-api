@@ -17,7 +17,8 @@ const app = express();
 // app.use(cors({ origin: "http://localhost:3001", credentials: true }));
 app.use(
   cors({
-    origin: "task-manager-frontend-pb95b745g-femi-majeks-projects.vercel.app",
+    origin:
+      "https://task-manager-frontend-pb95b745g-femi-majeks-projects.vercel.app",
     credentials: true,
   }),
 );
