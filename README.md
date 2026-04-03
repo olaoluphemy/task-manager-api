@@ -16,30 +16,33 @@ This project is a Node.js/Express backend that provides RESTful APIs for **task 
 
 ## 📂 Project Structure
 
+```
 project-root/
-│── controllers/ │
-| ├── taskController.js
-| ├── userController.js
-└── authController.js
-── routes/
+│── controllers/
+│   ├── taskController.js
+│   ├── userController.js
+│   └── authController.js
 │
-├── taskRoutes.js
-└── userRoutes.js
-── models/
+├── routes/
+│   ├── taskRoutes.js
+│   └── userRoutes.js
 │
-├── taskModel.js
-└── userModel.js
-── utils/
+├── models/
+│   ├── taskModel.js
+│   └── userModel.js
 │
-├── apiFeatures.js
-└── appError.js
-└── catchAsync.js
-└── email.js
-│── app.js
-│── server.js
-│── package.json
-|── config.env
-│── README.md
+├── utils/
+│   ├── apiFeatures.js
+│   ├── appError.js
+│   ├── catchAsync.js
+│   └── email.js
+│
+├── app.js
+├── server.js
+├── package.json
+├── config.env
+└── README.md
+```
 
 ---
 
