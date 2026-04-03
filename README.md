@@ -34,7 +34,7 @@ project-root/
 ├── utils/
 │   ├── apiFeatures.js
 │   ├── appError.js
-│   ├── catchAsync.js
+│   └── catchAsync.js
 │
 ├── app.js
 ├── server.js
