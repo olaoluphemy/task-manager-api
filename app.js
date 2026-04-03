@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
-const mongoSanitize = require("express-mongo-sanitize");
+// const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
@@ -14,11 +14,12 @@ const taskRouter = require("./routes/taskRoutes");
 
 const app = express();
 
-// app.use(cors({ origin: "http://localhost:3001", credentials: true }));
 app.use(
   cors({
     origin:
-      "https://task-manager-frontend-pb95b745g-femi-majeks-projects.vercel.app",
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3001"
+        : "https://task-manager-frontend-pb95b745g-femi-majeks-projects.vercel.app",
     credentials: true,
   }),
 );
@@ -39,9 +40,9 @@ app.use("/api", limiter);
 app.use(express.json({ limit: "10kb" }));
 app.use(cookieParser());
 
-app.use(mongoSanitize());
+// app.use(mongoSanitize())
 
-app.use(xss());
+// app.use(xss());
 
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
