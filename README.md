@@ -62,6 +62,7 @@ project-root/
 ```json
 {
   "status": "success",
+  "results": "2",
   "data": {
     "data": [
       {
@@ -89,7 +90,7 @@ project-root/
     ],
     "meta": {
       "page": "1",
-      "limit": "5",
+      "limit": "2",
       "nextPage": "2",
       "totalPages": "4"
     }
