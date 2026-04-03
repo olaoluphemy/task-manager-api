@@ -19,7 +19,7 @@ app.use(
     origin:
       process.env.NODE_ENV === "development"
         ? "http://localhost:3001"
-        : "https://task-manager-frontend-pb95b745g-femi-majeks-projects.vercel.app",
+        : "https://task-manager-frontend-rouge-chi.vercel.app",
     credentials: true,
   }),
 );
