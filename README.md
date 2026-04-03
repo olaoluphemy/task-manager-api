@@ -203,7 +203,7 @@ project-root/
 }
 ```
 
-## POST /api/v1/users/me
+## GET /api/v1/users/me
 
 ```json
 {
