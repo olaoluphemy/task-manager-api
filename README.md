@@ -249,10 +249,7 @@ PORT=3000
 DATABASE=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>
 JWT_SECRET=your_jwt_secret
 JWT_EXPIRES_IN=90d
-EMAIL_HOST=smtp.mailtrap.io
-EMAIL_PORT=2525
-EMAIL_USER=your_email_user
-EMAIL_PASS=your_email_pass
+
 ```
 
 ## 4. Run the server
